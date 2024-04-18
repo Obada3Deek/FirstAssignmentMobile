@@ -1,0 +1,48 @@
+<!-- activity_main.xml -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <ImageView
+        android:id="@+id/imageViewOperationAct"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:foreground="@drawable/background1"
+        android:scaleType="centerCrop"
+        android:src="@drawable/school5" />
+
+    <Spinner
+        android:id="@+id/character_spinner"
+        android:layout_width="114dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="285dp"
+        android:background="@color/white"
+        android:entries="@array/characters_array" />
+
+    <Button
+        android:id="@+id/button_ok"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/character_spinner"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="@color/btn"
+        android:text="Search" />
+
+    <ListView
+        android:id="@+id/animal_list_view"
+        android:layout_width="401dp"
+        android:layout_height="match_parent"
+        android:layout_below="@id/button_ok"
+        android:layout_marginTop="16dp"
+        android:background="@color/white"
+        android:visibility="gone"
+
+        />
+
+</RelativeLayout>
